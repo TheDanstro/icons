@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 0px auto 0px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: rgb(28, 22, 54)">
+
+        <div class="row">
+            <div id="icon1" class="image-container"><img src="img/ICONOGRAPHY preview-01.png" onmouseover = "this.src='img/ICONOGRAPHY preview-02.png';" onmouseout = "this.src='img/ICONOGRAPHY preview-01.png';"height="200" width="200"/></div>
+            <div id="icon2" class="image-container"><img src="img/ICONOGRAPHY preview-02.png" height="200" width="200"/></div>
+            <div id="icon3" class="image-container"><img src="img/ICONOGRAPHY preview-03.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div id="icon4" class="image-container"><img src="img/ICONOGRAPHY preview-04.png" height="200" width="200"/></div>
+            <div id="icon5" class="image-container"><img src="img/ICONOGRAPHY preview-05.png" height="200" width="200"/></div>
+            <div id="icon6" class="image-container"><img src="img/ICONOGRAPHY preview-06.png" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div id="icon7" class="image-container"><img src="img/ICONOGRAPHY preview-07.png" height="200" width="200"/></div>
+            <div id="icon8" class="image-container"><img src="img/ICONOGRAPHY preview-08.png" height="200" width="200"/></div>
+            <div id="icon9" class="image-container"><img src="img/ICONOGRAPHY preview-09.png" height="200" width="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/vineboom.wav");
+
+            window.onload = function() {
+                document.getElementById('icon1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon2').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon3').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon4').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon5').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon6').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon7').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon8').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon9').addEventListener('click', function () {sound1.play();});
+            }
+        </script>
+        
+    </body>
+    
+</html>
