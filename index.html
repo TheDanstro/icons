@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    <title>SYSTEM</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 0px auto 0px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:10px;
+            }
+            body {
+                background-image: radial-gradient(#2d150b 20%, transparent 20%),
+                radial-gradient(#0000 20%, transparent 20%);
+                background-position: 0 0, 0px 0px;
+                background-size: 20px 20px;
+            }
+
+            img:hover {
+			    outline: 5px solid white;
+		    }
+
+            img {
+                border-radius: 20%;
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color: rgb(47, 36, 70)">
+
+        <div class="row">
+            <div class="image-container"><img id="icon1" src="img/ICONOGRAPHY-01.png" onmouseover="this.src='img/ICONOGRAPHY B-01.png';" onmouseout="this.src='img/ICONOGRAPHY-01.png'; "height="200" width="200"/></div>
+            <div id="icon2" class="image-container"><img src="img/ICONOGRAPHY-02.png" onmouseover="this.src='img/ICONOGRAPHY B-02.png';" onmouseout="this.src='img/ICONOGRAPHY-02.png'; "height="200" width="200"/></div>
+            <div id="icon3" class="image-container"><img src="img/ICONOGRAPHY-03.png" onmouseover="this.src='img/ICONOGRAPHY B-03.png';" onmouseout="this.src='img/ICONOGRAPHY-03.png'; "height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div id="icon4" class="image-container"><img src="img/ICONOGRAPHY-04.png" onmouseover="this.src='img/ICONOGRAPHY B-04.png';" onmouseout="this.src='img/ICONOGRAPHY-04.png'; "height="200" width="200"/></div>
+            <div id="icon5" class="image-container"><img src="img/ICONOGRAPHY-05.png" onmouseover="this.src='img/ICONOGRAPHY B-05.png';" onmouseout="this.src='img/ICONOGRAPHY-05.png'; "height="200" width="200"/></div>
+            <div id="icon6" class="image-container"><img src="img/ICONOGRAPHY-06.png" onmouseover="this.src='img/ICONOGRAPHY B-06.png';" onmouseout="this.src='img/ICONOGRAPHY-06.png'; "height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div id="icon7" class="image-container"><img src="img/ICONOGRAPHY-07.png" onmouseover="this.src='img/ICONOGRAPHY B-07.png';" onmouseout="this.src='img/ICONOGRAPHY-07.png'; "height="200" width="200"/></div>
+            <div id="icon8" class="image-container"><img src="img/ICONOGRAPHY-08.png" onmouseover="this.src='img/ICONOGRAPHY B-08.png';" onmouseout="this.src='img/ICONOGRAPHY-08.png'; "height="200" width="200"/></div>
+            <div id="icon9" class="image-container"><img src="img/ICONOGRAPHY-09.png" onmouseover="this.src='img/ICONOGRAPHY B-09.png';" onmouseout="this.src='img/ICONOGRAPHY-09.png'; "height="200" width="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/sound1.wav");
+            var sound2 = new buzz.sound("sound/sound2.wav");
+            var sound3 = new buzz.sound("sound/sound3.wav");
+            var sound4 = new buzz.sound("sound/sound4.wav");
+            var sound5 = new buzz.sound("sound/sound5.wav");
+            var sound6 = new buzz.sound("sound/sound6.wav");
+            var sound7 = new buzz.sound("sound/sound7.wav");
+            var sound8 = new buzz.sound("sound/sound8.wav");
+            var sound9 = new buzz.sound("sound/sound9.wav");
+
+            window.onload = function() {
+                document.getElementById('icon1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('icon2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('icon3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('icon4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('icon5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('icon6').addEventListener('click', function () {sound6.play();});
+                document.getElementById('icon7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('icon8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('icon9').addEventListener('click', function () {sound9.play();});
+            }
+        </script>
+        
+    </body>
+    
+</html>
